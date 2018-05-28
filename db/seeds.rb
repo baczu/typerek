@@ -11,4 +11,4 @@
 Notification.create(content: 'W meczach fazy pucharowej typujemy wyniki tylko do 90 minuty spotkania. Czyli typ "remis" jest jak najbardziej poprawny. Oznaczać to będzie że drużyny po zagraniu przepisowych 90 minut będą miały dogrywkę.')
 
 # Grupa A
-Match.create(team_a: 'Egipt', team_b: 'Urugwaj', start: '2018-06-15 14:00', win_a: '7,25', tie: '3,80', win_b: '1,55')
+Match.create(team_a: 'Egipt', team_b: 'Urugwaj', start: '2018-06-15 14:00', win_a: 7.25, tie: 3.80, win_b: 1.55)
