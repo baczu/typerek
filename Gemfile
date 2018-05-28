@@ -27,15 +27,14 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg', '~> 0.18'
   gem 'rspec-rails'
   gem 'faker'
   gem 'factory_girl_rails'
 end
 
 group :production do
-  #gem 'pg'
-  gem 'sqlite3'
+  gem 'pg', '~> 0.18'
 end
 
 gem 'mechanize'
