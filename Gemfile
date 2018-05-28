@@ -42,8 +42,8 @@ gem 'jquery-rails'
 
 gem 'haml-rails'
 
-gem 'devise', '4.1.1'
-gem 'devise_invitable', '1.6.0'
+gem 'devise'
+gem 'devise_invitable'
 
 gem 'cancancan'
 
