@@ -75,4 +75,3 @@ Match.create(team_a: 'Japonia', team_b: 'Polska', start: '2018-06-28 16:00')
 Match.create(team_a: 'Senegal', team_b: 'Kolumbia', start: '2018-06-28 16:00')
 
 #, win_a: 7.25, tie: 3.80, win_b: 1.55
-
