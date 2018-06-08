@@ -8,11 +8,11 @@
   Mecze
 
 %ul.nav.nav-tabs{role: 'tablist'}
-  %li.active{role: 'presentation'}
+  %li{role: 'presentation', class: ('active' if @matches_pending.size > 0?)}}
     = link_to '#pending', aria: { controls: 'pending' }, role: 'tab', data: { toggle: 'tab' } do
       %span.badge= @matches_pending.size
       Trwające
-  %li{role: 'presentation'}
+  %li{role: 'presentation', class: ('active' if @matches_pending.size == 0?)}}}
     = link_to '#future', aria: { controls: 'future' }, role: 'tab', data: { toggle: 'tab' } do
       %span.badge= @matches_future.size
       Przyszłe
