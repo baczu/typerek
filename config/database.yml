@@ -1,25 +1,21 @@
-# SQLite version 3.x
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
-development:
+default: &default
   adapter: postgresql
-  database: db/development.postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: password
   pool: 5
-  timeout: 5000
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+development:
+  <<: *default
+  database: typerek_development
+
 test:
-  adapter: postgresql
-  database: db/test.postgresql
-  pool: 5
-  timeout: 5000
+  <<: *default
+  database: typerek_test
 
 production:
   adapter: postgresql
-  database: db/production.postgresql
-  pool: 5
-  timeout: 5000
+  encoding: unicode
+  url: <%= ENV['DATABASE_URL'] %>
+  pool: <%= ENV['THREADS_COUNT'].to_i %>

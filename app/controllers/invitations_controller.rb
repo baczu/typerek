@@ -5,7 +5,7 @@ class InvitationsController < Devise::InvitationsController
   protected
 
   def check_admin
-    redirect home_path unless current_user.admin?
+    redirect_to home_path unless current_user.admin?
   end
 
   def invite_resource
