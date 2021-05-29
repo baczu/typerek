@@ -1,0 +1,66 @@
+source 'https://rubygems.org'
+
+ruby '2.6.7'
+
+gem 'bootstrap-sass'
+gem 'bootswatch-rails'
+gem 'cancancan'
+gem 'coffee-rails'
+gem 'devise'
+gem 'devise_invitable'
+gem 'font-awesome-rails'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'mechanize'
+gem 'pg'
+gem 'puma'
+gem 'rails', '~> 4.2'
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x'
+gem 'sass-rails'
+gem 'therubyracer', platforms: :ruby
+gem 'uglifier', '>= 1.0.3'
+
+group :development do
+  gem 'brakeman', require: false
+  gem 'rubocop'
+end
+
+group :development, :test do
+<<<<<<< HEAD
+  gem 'pg', '~> 0.18'
+=======
+>>>>>>> 3a5472f4841c6d19cd0159fb85e77deb1156526e
+  gem 'rspec-rails'
+end
+<<<<<<< HEAD
+
+group :production do
+  gem 'pg', '~> 0.18'
+end
+
+gem 'mechanize'
+gem 'jquery-rails'
+
+gem 'haml-rails'
+
+gem 'devise'
+gem 'devise_invitable'
+
+gem 'cancancan'
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug'
+=======
+>>>>>>> 3a5472f4841c6d19cd0159fb85e77deb1156526e
